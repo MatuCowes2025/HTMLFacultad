@@ -5,46 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MTHW- Tienda de ropa</title>
+  <title>MTHW - Tienda de ropa</title>
   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/estilos.css">
 </head>
 
 <body>
-
   <header class="hero">
     <nav class="nav container">
-      <div class="nav__logo">
-        <img src="./images/favicon.png" alt="MTHW Logo" class="snav__logo-img">
+      <div class="nav__toggle" onclick="toggleMenu()">
+        <img src="./images/menu.svg" alt="Menú">
       </div>
+
+      <img src="./images/favicon.png" alt="MTHW Logo" class="nav__logo-img">
 
       <ul class="nav__link nav__link--menu">
         <li class="nav__items">
-          <a href="#" class="nav__links">Inicio</a>
+          <a href="coleccion.html" id="coleccion-link">Colección</a>
         </li>
         <li class="nav__items">
-          <a href="#" class="nav__links">Acerca de</a>
+          <a href="aboutus.html" id="about-link">About us</a>
         </li>
         <li class="nav__items">
-          <a href="#" class="nav__links">Contacto</a>
+          <a href="contacto.html" class="contacto-link">Contacto</a>
         </li>
-        <img src="./images/close.svg" class="nav__close">
+        <img src="./images/close.svg" alt="Cerrar menú" class="nav__close">
       </ul>
-
-      <div class="nav__menu">
-        <img src="./images/menu.svg" class="nav__img">
-      </div>
     </nav>
 
     <section class="hero__container container">
       <h1 class="hero__title">El estilo se lleva en la piel y en MTHW.</h1>
-      <p class="hero__paragraph">Cada pieza de MTHW está pensada para destacar lo mejor de vos. Calidad, estilo y diseño
-        hechos para la ciudad.</p>
-      <a href="#" class="cta">Descubrí nuestra colección</a>
+      <p class="hero__paragraph">Calidad, estilo y diseño hechos para vos.</p>
+      <a href="coleccion.html"
+        style="background-color: #007bff; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        Ver Colección de Ropa
+      </a>
     </section>
   </header>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
